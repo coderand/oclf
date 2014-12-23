@@ -52,6 +52,8 @@ How to build and run it:
 * Run OC_viewer.exe
 * Have fun!
 
+Original executables could be found here http://and.intercon.ru/releases/fanstuff/oclf
+
 On a final note I would like to give extra credit to Outcast modding  
 community that did some file format investigation efforts back in days and  
 published those on forums that no longer exist. As well as a guy whose name I  
