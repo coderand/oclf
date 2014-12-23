@@ -58,4 +58,4 @@ don't remember that investigated animation file formats and how mesh skinning
 was done.
 
 Cheers!
-<released December 2015>
+*released December 2015*
