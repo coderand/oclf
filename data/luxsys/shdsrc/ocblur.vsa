@@ -1,0 +1,14 @@
+// This file is distributed under a MIT license. See LICENSE.txt for details.
+
+vs.1.1
+
+dcl_position    v0
+dcl_color0      v3
+dcl_texcoord0   v6
+
+mov oPos, v0
+
+add oT0.xy, v6.xy, c0.xz
+add oT1.xy, v6.xy, -c0.xz
+add oT2.xy, v6.xy, c0.zy
+add oT3.xy, v6.xy, -c0.zy

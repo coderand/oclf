@@ -1,0 +1,9 @@
+// This file is distributed under a MIT license. See LICENSE.txt for details.
+
+ps.1.1
+
+tex t0
+texbem t1, t0
+tex t2
+
+mul_x2_sat r0, t2, t1

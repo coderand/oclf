@@ -1,0 +1,8 @@
+// This file is distributed under a MIT license. See LICENSE.txt for details.
+
+ps.1.1
+
+tex t0 // base texture
+tex t1 // clouds 1
+
+mul_sat r0, t1, t0

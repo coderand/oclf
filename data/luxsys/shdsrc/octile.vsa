@@ -1,0 +1,43 @@
+// This file is distributed under a MIT license. See LICENSE.txt for details.
+
+// OCLF : shader for tile transformation
+//
+// c[ 0 ] - tile position
+//
+// c[ 4 ] - mVP_0
+// c[ 5 ] - mVP_1
+// c[ 6 ] - mVP_2
+// c[ 7 ] - mVP_3
+//
+// c[ 10 ] - camera position
+//
+//------------------------------------------------
+// vertex format
+//
+// v0 - position
+// v1 - texcoord 1
+// v2 - indexes
+//
+
+vs.1.1
+
+dcl_position 	v0
+dcl_texcoord0 	v1
+
+add r0, v0, c[ 0 ]
+
+// transform to clip space
+dp4 oPos.x, r0, c[ 4 ]
+dp4 oPos.y, r0, c[ 5 ]
+dp4 oPos.z, r0, c[ 6 ]
+dp4 oPos.w, r0, c[ 7 ]
+
+mov oT0.xy, v1
+
+mul oT1.x, r0.x, c[ 12 ].x
+mad oT1.y, r0.z, c[ 12 ].x, c[ 12 ].y
+
+dp4 r1.x, r0, c[ 6 ]
+mul r1.x, r1.x, c[ 11 ].y
+add r1.x, c[ 11 ].z, -r1.x
+mov oFog, r1.x

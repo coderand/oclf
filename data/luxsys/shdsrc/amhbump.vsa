@@ -1,0 +1,24 @@
+// This file is distributed under a MIT license. See LICENSE.txt for details.
+
+vs.1.1
+
+dcl_position    v0
+dcl_normal      v3
+dcl_texcoord0   v6
+dcl_texcoord1   v7
+
+dp4 r0.x, c0, v0
+dp4 r0.y, c1, v0
+dp4 r0.z, c2, v0
+dp4 r0.w, c3, v0
+
+dp4 r1.x, c4, r0
+dp4 r1.y, c5, r0
+dp4 r1.z, c6, r0
+dp4 r1.w, c7, r0
+
+mov oPos, r1
+
+mov oT0, v6
+mov oT1, v7
+mov oT2, v6
