@@ -20,33 +20,33 @@ moment. All warnings are disabled though since there are tons of them.
 
 What do we have in here:
 
-  data/
-    luxsys/        - Data files for the viewer UI (artwork, shader binaries).
-      shdsrc/      - Pixel and vertex shader assembly source files.
-  DCL/             - Reverse engineered PKWARE's decompression routines.
-  OC_data/         - Classes that map to original Outcast file formats.
-  OC_pack/         - Pack file creator (no compression).
-  OC_unpack/       - Deprecated pak file unpacker. Used it prior to DCL.
-  OC_viewer/       - Main viewer app and core subsystems.
-  OC3D/            - "Client / User" code of the viewer so to speak.
-  vc2010-build/    - VC2010 Express solution and projects.
-  XFont/           - Deprecated font file converter. Used just for one file.
-  xmath/           - Trivial math classes and helpers (vector, matrix, etc).
-  oc_readme.txt    - Original readme file and work log.
+    data/  
+      luxsys/        - Data files for the viewer UI (artwork, shader binaries).  
+        shdsrc/      - Pixel and vertex shader assembly source files.  
+    DCL/             - Reverse engineered PKWARE's decompression routines.  
+    OC_data/         - Classes that map to original Outcast file formats.  
+    OC_pack/         - Pack file creator (no compression).  
+    OC_unpack/       - Deprecated pak file unpacker. Used it prior to DCL.  
+    OC_viewer/       - Main viewer app and core subsystems.  
+    OC3D/            - "Client / User" code of the viewer so to speak.  
+    vc2010-build/    - VC2010 Express solution and projects.  
+    XFont/           - Deprecated font file converter. Used just for one file.  
+    xmath/           - Trivial math classes and helpers (vector, matrix, etc).  
+    oc_readme.txt    - Original readme file and work log.  
 
 How to build and run it:
 * Install Visual Studio 2010 Express. It is free.
-* Install DirectX SDK. I have tested with June 2010 release. Make sure that
-  **DXSDK_DIR** environment variable is set up correctly.
+* Install DirectX SDK. I have tested with June 2010 release. Make sure that  
+  **DXSDK_DIR** environment variable is set up correctly.  
   *e.g. DXSDK_DIR=C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\*
-* Install NASM and make sure it is added to your **path** environment variable.
+* Install NASM and make sure it is added to your **path** environment variable.  
   *e.g. path=%path%;C:\Program Files (x86)\NASM*
 * (Optional) Install Windows or Platform SDK.
-* Open *vc2010-build\oclf\oclf.sln* and build the solution (Debug or Release).
-  This will generate executables and luxsys.pak files into
+* Open *vc2010-build\oclf\oclf.sln* and build the solution (Debug or Release).  
+  This will generate executables and luxsys.pak files into  
   *vc2010-build\oclf\bin* directory.
-* Copy OC_viewer.exe and luxsys.pak into your Outcast game directory where all
-  pak or opk (Outcast 1.1) files are placed.
+* Copy OC_viewer.exe and luxsys.pak into your Outcast game directory  
+  where all **pak** or **opk** (Outcast 1.1) files are placed.  
   *e.g. C:\Program Files (x86)\Steam\steamapps\common\Outcast 1.1\Legacy\*
 * Run OC_viewer.exe
 * Have fun!
