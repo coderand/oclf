@@ -57,5 +57,5 @@ published those on forums that no longer exist. As well as a guy whose name I
 don't remember that investigated animation file formats and how mesh skinning
 was done.
 
-Cheers!
+Cheers!  
 *released December 2015*
