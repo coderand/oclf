@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="luxsys">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\data\luxsys\amhbump.pso">
+      <Filter>luxsys</Filter>
+    </None>
+    <None Include="..\..\..\data\luxsys\amhbump.vso">
+      <Filter>luxsys</Filter>
+    </None>
+    <None Include="..\..\..\data\luxsys\fog.tga">
+      <Filter>luxsys</Filter>
+    </None>
+    <None Include="..\..\..\data\luxsys\hlight32.tga">
+      <Filter>luxsys</Filter>
+    </None>
+    <None Include="..\..\..\data\luxsys\lut.tga">
+      <Filter>luxsys</Filter>
+    </None>
+    <None Include="..\..\..\data\luxsys\ocblur.pso">
+      <Filter>luxsys</Filter>
+    </None>
+    <None Include="..\..\..\data\luxsys\ocblur.vso">
+      <Filter>luxsys</Filter>
+    </None>
+    <None Include="..\..\..\data\luxsys\ocglowout.pso">
+      <Filter>luxsys</Filter>
+    </None>
+    <None Include="..\..\..\data\luxsys\octile.pso">
+      <Filter>luxsys</Filter>
+    </None>
+    <None Include="..\..\..\data\luxsys\octile.vso">
+      <Filter>luxsys</Filter>
+    </None>
+    <None Include="..\..\..\data\luxsys\octitle2.jpg">
+      <Filter>luxsys</Filter>
+    </None>
+    <None Include="..\..\..\data\luxsys\sf.tga">
+      <Filter>luxsys</Filter>
+    </None>
+    <None Include="..\..\..\data\luxsys\sf.xfn">
+      <Filter>luxsys</Filter>
+    </None>
+    <None Include="build_luxsys.bat" />
+  </ItemGroup>
+</Project>

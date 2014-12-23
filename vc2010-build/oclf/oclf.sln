@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OC_pack", "OC_pack\OC_pack.vcxproj", "{1C449892-5239-47EA-A2B4-232856FA1970}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OC_data", "OC_data\OC_data.vcxproj", "{E35AA902-3F72-4CD6-BAC1-8F3609785B41}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OC_viewer", "OC_viewer\OC_viewer.vcxproj", "{63915635-A43A-4925-8379-CD1F0619B1D5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "luxsys", "luxsys\luxsys.vcxproj", "{6F0359E1-0370-479D-B3F2-EEDBB7A49CE4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1C449892-5239-47EA-A2B4-232856FA1970} = {1C449892-5239-47EA-A2B4-232856FA1970}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C449892-5239-47EA-A2B4-232856FA1970}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1C449892-5239-47EA-A2B4-232856FA1970}.Debug|Win32.Build.0 = Debug|Win32
+		{1C449892-5239-47EA-A2B4-232856FA1970}.Release|Win32.ActiveCfg = Release|Win32
+		{1C449892-5239-47EA-A2B4-232856FA1970}.Release|Win32.Build.0 = Release|Win32
+		{E35AA902-3F72-4CD6-BAC1-8F3609785B41}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E35AA902-3F72-4CD6-BAC1-8F3609785B41}.Debug|Win32.Build.0 = Debug|Win32
+		{E35AA902-3F72-4CD6-BAC1-8F3609785B41}.Release|Win32.ActiveCfg = Release|Win32
+		{E35AA902-3F72-4CD6-BAC1-8F3609785B41}.Release|Win32.Build.0 = Release|Win32
+		{63915635-A43A-4925-8379-CD1F0619B1D5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{63915635-A43A-4925-8379-CD1F0619B1D5}.Debug|Win32.Build.0 = Debug|Win32
+		{63915635-A43A-4925-8379-CD1F0619B1D5}.Release|Win32.ActiveCfg = Release|Win32
+		{63915635-A43A-4925-8379-CD1F0619B1D5}.Release|Win32.Build.0 = Release|Win32
+		{6F0359E1-0370-479D-B3F2-EEDBB7A49CE4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6F0359E1-0370-479D-B3F2-EEDBB7A49CE4}.Debug|Win32.Build.0 = Debug|Win32
+		{6F0359E1-0370-479D-B3F2-EEDBB7A49CE4}.Release|Win32.ActiveCfg = Release|Win32
+		{6F0359E1-0370-479D-B3F2-EEDBB7A49CE4}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

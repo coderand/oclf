@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\xmath">
+      <UniqueIdentifier>{6ed20647-3d59-40c0-a946-27446f1fb392}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\xmath">
+      <UniqueIdentifier>{c7cebc9d-1d1e-4ac9-a31d-2c09441e3f20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\xfs">
+      <UniqueIdentifier>{fed0d495-e3a8-4a27-8b3c-9eaaac357896}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\OC_data\anmfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OC_data\btmfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OC_data\CATess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OC_data\CBaseVoxelTile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OC_data\COCLndData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OC_data\COCStr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OC_data\COCWorldMarks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OC_data\fntfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OC_data\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OC_data\mshfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OC_data\OCMath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OC_data\pltfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OC_data\rbtfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OC_data\tgafile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\xmath\xbbox.cpp">
+      <Filter>Source Files\xmath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\xmath\xeuler.cpp">
+      <Filter>Source Files\xmath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\xmath\xmatrix.cpp">
+      <Filter>Source Files\xmath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\xmath\xplane.cpp">
+      <Filter>Source Files\xmath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\xmath\xquat.cpp">
+      <Filter>Source Files\xmath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\xmath\xvec3.cpp">
+      <Filter>Source Files\xmath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\xmath\xvec4.cpp">
+      <Filter>Source Files\xmath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OC_viewer\xfs.cpp">
+      <Filter>Source Files\xfs</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\OC_data\CATess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\OC_data\ocdata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\OC_data\OCMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\xmath\xbbox.h">
+      <Filter>Header Files\xmath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\xmath\xeuler.h">
+      <Filter>Header Files\xmath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\xmath\xmath.h">
+      <Filter>Header Files\xmath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\xmath\xmatrix.h">
+      <Filter>Header Files\xmath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\xmath\xplane.h">
+      <Filter>Header Files\xmath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\xmath\xquat.h">
+      <Filter>Header Files\xmath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\xmath\xvec3.h">
+      <Filter>Header Files\xmath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\xmath\xvec4.h">
+      <Filter>Header Files\xmath</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E35AA902-3F72-4CD6-BAC1-8F3609785B41}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>OC_data</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(DXSDK_DIR)include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)bin\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(DXSDK_DIR)include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)bin\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>DIRECTINPUT_VERSION=0x0800;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\OC_data;..\..\..\OC_viewer;..\..\..\OC3D;..\..\..\xmath</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>DIRECTINPUT_VERSION=0x0800;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\OC_data;..\..\..\OC_viewer;..\..\..\OC3D;..\..\..\xmath</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\OC_data\anmfile.cpp" />
+    <ClCompile Include="..\..\..\OC_data\btmfile.cpp" />
+    <ClCompile Include="..\..\..\OC_data\CATess.cpp" />
+    <ClCompile Include="..\..\..\OC_data\CBaseVoxelTile.cpp" />
+    <ClCompile Include="..\..\..\OC_data\COCLndData.cpp" />
+    <ClCompile Include="..\..\..\OC_data\COCStr.cpp" />
+    <ClCompile Include="..\..\..\OC_data\COCWorldMarks.cpp" />
+    <ClCompile Include="..\..\..\OC_data\fntfile.cpp" />
+    <ClCompile Include="..\..\..\OC_data\main.cpp" />
+    <ClCompile Include="..\..\..\OC_data\mshfile.cpp" />
+    <ClCompile Include="..\..\..\OC_data\OCMath.cpp" />
+    <ClCompile Include="..\..\..\OC_data\pltfile.cpp" />
+    <ClCompile Include="..\..\..\OC_data\rbtfile.cpp" />
+    <ClCompile Include="..\..\..\OC_data\tgafile.cpp" />
+    <ClCompile Include="..\..\..\OC_viewer\xfs.cpp" />
+    <ClCompile Include="..\..\..\xmath\xbbox.cpp" />
+    <ClCompile Include="..\..\..\xmath\xeuler.cpp" />
+    <ClCompile Include="..\..\..\xmath\xmatrix.cpp" />
+    <ClCompile Include="..\..\..\xmath\xplane.cpp" />
+    <ClCompile Include="..\..\..\xmath\xquat.cpp" />
+    <ClCompile Include="..\..\..\xmath\xvec3.cpp" />
+    <ClCompile Include="..\..\..\xmath\xvec4.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\OC_data\CATess.h" />
+    <ClInclude Include="..\..\..\OC_data\ocdata.h" />
+    <ClInclude Include="..\..\..\OC_data\OCMath.h" />
+    <ClInclude Include="..\..\..\xmath\xbbox.h" />
+    <ClInclude Include="..\..\..\xmath\xeuler.h" />
+    <ClInclude Include="..\..\..\xmath\xmath.h" />
+    <ClInclude Include="..\..\..\xmath\xmatrix.h" />
+    <ClInclude Include="..\..\..\xmath\xplane.h" />
+    <ClInclude Include="..\..\..\xmath\xquat.h" />
+    <ClInclude Include="..\..\..\xmath\xvec3.h" />
+    <ClInclude Include="..\..\..\xmath\xvec4.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

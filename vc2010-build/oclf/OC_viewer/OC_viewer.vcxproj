@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{63915635-A43A-4925-8379-CD1F0619B1D5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>OC_viewer</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(DXSDK_DIR)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)lib\x86;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+    <OutDir>$(SolutionDir)bin\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(DXSDK_DIR)include;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)lib\x86;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+    <OutDir>$(SolutionDir)bin\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>DIRECTINPUT_VERSION=0x0800;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\DCL;..\..\..\OC_data;..\..\..\OC_viewer;..\..\..\OC3D;..\..\..\xmath</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;winmm.lib;comctl32.lib;dinput8.lib;dxguid.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CustomBuildStep />
+    <CustomBuildStep />
+    <CustomBuildStep />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>DIRECTINPUT_VERSION=0x0800;WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\DCL;..\..\..\OC_data;..\..\..\OC_viewer;..\..\..\OC3D;..\..\..\xmath</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;winmm.lib;comctl32.lib;dinput8.lib;dxguid.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CustomBuildStep />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\DCL\explode.c" />
+    <ClCompile Include="..\..\..\OC3D\OCAnim.cpp" />
+    <ClCompile Include="..\..\..\OC3D\OCGUI.cpp" />
+    <ClCompile Include="..\..\..\OC3D\OCInput.cpp" />
+    <ClCompile Include="..\..\..\OC3D\OCMeshCache.cpp" />
+    <ClCompile Include="..\..\..\OC3D\OCObject.cpp" />
+    <ClCompile Include="..\..\..\OC3D\OCPlayer.cpp" />
+    <ClCompile Include="..\..\..\OC3D\OCTile.cpp" />
+    <ClCompile Include="..\..\..\OC3D\OCTileContainer.cpp" />
+    <ClCompile Include="..\..\..\OC3D\OCViewer.cpp" />
+    <ClCompile Include="..\..\..\OC3D\OCWorld.cpp" />
+    <ClCompile Include="..\..\..\OC3D\OCWorldUpdate.cpp" />
+    <ClCompile Include="..\..\..\OC_data\anmfile.cpp" />
+    <ClCompile Include="..\..\..\OC_data\btmfile.cpp" />
+    <ClCompile Include="..\..\..\OC_data\CATess.cpp" />
+    <ClCompile Include="..\..\..\OC_data\CBaseVoxelTile.cpp" />
+    <ClCompile Include="..\..\..\OC_data\COCLndData.cpp" />
+    <ClCompile Include="..\..\..\OC_data\COCStr.cpp" />
+    <ClCompile Include="..\..\..\OC_data\COCWorldMarks.cpp" />
+    <ClCompile Include="..\..\..\OC_data\mshfile.cpp" />
+    <ClCompile Include="..\..\..\OC_data\OCMath.cpp" />
+    <ClCompile Include="..\..\..\OC_data\pltfile.cpp" />
+    <ClCompile Include="..\..\..\OC_data\rbtfile.cpp" />
+    <ClCompile Include="..\..\..\OC_data\tgafile.cpp" />
+    <ClCompile Include="..\..\..\OC_viewer\CRenderer.cpp" />
+    <ClCompile Include="..\..\..\OC_viewer\debugcode.cpp" />
+    <ClCompile Include="..\..\..\OC_viewer\idxvtxbufs.cpp" />
+    <ClCompile Include="..\..\..\OC_viewer\main.cpp" />
+    <ClCompile Include="..\..\..\OC_viewer\X3DFont.cpp" />
+    <ClCompile Include="..\..\..\OC_viewer\X3DRender.cpp" />
+    <ClCompile Include="..\..\..\OC_viewer\X3DRender_2DDraw.cpp" />
+    <ClCompile Include="..\..\..\OC_viewer\X3DRender_DXS.cpp" />
+    <ClCompile Include="..\..\..\OC_viewer\xfs.cpp" />
+    <ClCompile Include="..\..\..\OC_viewer\xfs_exts.cpp" />
+    <ClCompile Include="..\..\..\OC_viewer\xfs_ext_ocpak.cpp" />
+    <ClCompile Include="..\..\..\xmath\xbbox.cpp" />
+    <ClCompile Include="..\..\..\xmath\xeuler.cpp" />
+    <ClCompile Include="..\..\..\xmath\xmatrix.cpp" />
+    <ClCompile Include="..\..\..\xmath\xplane.cpp" />
+    <ClCompile Include="..\..\..\xmath\xquat.cpp" />
+    <ClCompile Include="..\..\..\xmath\xvec3.cpp" />
+    <ClCompile Include="..\..\..\xmath\xvec4.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\OC3D\oc3d.h" />
+    <ClInclude Include="..\..\..\OC3D\ocentity.h" />
+    <ClInclude Include="..\..\..\OC3D\ocinput.h" />
+    <ClInclude Include="..\..\..\OC_viewer\common.h" />
+    <ClInclude Include="..\..\..\OC_viewer\CRenderer.h" />
+    <ClInclude Include="..\..\..\OC_viewer\idxvtxbufs.h" />
+    <ClInclude Include="..\..\..\OC_viewer\resource.h" />
+    <ClInclude Include="..\..\..\OC_viewer\x3d.h" />
+    <ClInclude Include="..\..\..\OC_viewer\xfs.h" />
+    <ClInclude Include="..\..\..\xmath\xbbox.h" />
+    <ClInclude Include="..\..\..\xmath\xeuler.h" />
+    <ClInclude Include="..\..\..\xmath\xmath.h" />
+    <ClInclude Include="..\..\..\xmath\xmatrix.h" />
+    <ClInclude Include="..\..\..\xmath\xplane.h" />
+    <ClInclude Include="..\..\..\xmath\xquat.h" />
+    <ClInclude Include="..\..\..\xmath\xvec3.h" />
+    <ClInclude Include="..\..\..\xmath\xvec4.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\DCL\dclbyand.asm">
+      <FileType>Document</FileType>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)$(IntermediateOutputPath)dclbyand.obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">nasm.exe -f win32 -o %(Outputs) %(FullPath)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)$(IntermediateOutputPath)dclbyand.obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">nasm.exe -f win32 -o %(Outputs) %(FullPath)</Command>
+    </CustomBuild>
+    <None Include="..\..\..\OC_viewer\cursor1.cur" />
+    <None Include="..\..\..\OC_viewer\cursor2.cur" />
+    <None Include="..\..\..\OC_viewer\cursor3.cur" />
+    <None Include="..\..\..\OC_viewer\cursor4.cur" />
+    <None Include="..\..\..\OC_viewer\icon2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\OC_viewer\Script1.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
