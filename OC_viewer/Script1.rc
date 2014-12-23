@@ -1,0 +1,218 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+//#include "afxres.h"
+
+#include <WinResrc.h>
+
+#ifndef IDC_STATIC
+#define IDC_STATIC (-1)
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 182, 212
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_MINIMIZEBOX | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Outcast Lives Forever 1.02"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Start",IDOK,6,178,118,30,BS_FLAT
+    PUSHBUTTON      "Exit",IDCANCEL,127,194,50,14,BS_FLAT
+    PUSHBUTTON      "About",IDC_ABOUT,127,178,50,14,BS_FLAT
+    CONTROL         "Image post processing",IDC_GLOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,73,87,10
+    CONTROL         "Complex water surface",IDC_COMPLEXWATER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,85,87,10
+    CONTROL         "Bump mapping",IDC_BUMPMAPPING,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,97,63,10
+    CONTROL         "Shadows",IDC_SHADOWS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,104,73,45,10
+    CONTROL         "Soft shadows",IDC_SOFTSHADOWS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,104,85,59,10
+    CONTROL         "Show FPS",IDC_SHOWFPS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,104,97,49,10
+    CONTROL         "Fullscreen",IDC_FULLSCREEN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,51,46,48,10
+    CONTROL         "V Sync",IDC_VSYNC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    104,46,39,10
+    COMBOBOX        IDC_RMODES,51,28,121,132,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Video options",IDC_STATIC,6,1,171,59,BS_FLAT
+    EDITTEXT        IDC_VIDEOCARD,51,12,121,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "3D Stuff :",IDC_STATIC,19,15,31,8
+    LTEXT           "Resolution :",IDC_STATIC,12,30,38,8
+    GROUPBOX        "Advanced options",IDC_STATIC,6,61,171,51,BS_FLAT
+    GROUPBOX        "Functional keys",IDC_STATIC,6,113,171,61,BS_FLAT
+    LTEXT           "Forward move",IDC_STATIC,12,124,46,8
+    LTEXT           "Backward move",IDC_STATIC,12,133,52,8
+    LTEXT           "Left move",IDC_STATIC,12,142,32,8
+    LTEXT           "Right move",IDC_STATIC,12,151,37,8
+    LTEXT           ": W",IDC_STATIC,70,124,12,8
+    LTEXT           ": S",IDC_STATIC,70,133,10,8
+    LTEXT           ": A",IDC_STATIC,70,142,10,8
+    LTEXT           ": D",IDC_STATIC,70,151,10,8
+    LTEXT           "Main menu",IDC_STATIC,12,160,36,8
+    LTEXT           "Fly up",IDC_STATIC,97,124,20,8
+    LTEXT           "Fly down",IDC_STATIC,97,133,29,8
+    LTEXT           "Zoom in",IDC_STATIC,97,142,26,8
+    LTEXT           "Zoom out",IDC_STATIC,97,151,31,8
+    LTEXT           ": Esc",IDC_STATIC,70,160,17,8
+    LTEXT           ": E",IDC_STATIC,132,124,10,8
+    LTEXT           ": C",IDC_STATIC,132,132,10,8
+    LTEXT           ": Home",IDC_STATIC,132,142,24,8
+    LTEXT           ": End",IDC_STATIC,132,151,18,8
+    ICON            IDI_ICON1,IDC_STATIC,18,39,20,20
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 186, 156
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,135,140,50,14,BS_FLAT
+    LTEXT           "OUTCAST Lives Forever",IDC_STATIC,53,5,80,8
+    LTEXT           "is a big fan project based on the best adventure game",
+                    IDC_STATIC,7,18,170,8
+    LTEXT           "made ever, any ideas? Yep...! It is OUTCAST.",
+                    IDC_STATIC,7,26,146,8
+    LTEXT           "Original OUTCAST game was made by Appeal in 1999.",
+                    IDC_STATIC,7,41,174,8
+    LTEXT           "Today we know them as ElseWhere Entertainment.",
+                    IDC_STATIC,7,50,162,8
+    LTEXT           "So. I am a big fan of this game and I have started this",
+                    IDC_STATIC,7,67,168,8
+    LTEXT           "project to know more about all  Appeal's stuff in OC.",
+                    IDC_STATIC,7,76,163,8
+    LTEXT           "Now. You can load maps, drive characters, run like in",
+                    IDC_STATIC,7,85,169,8
+    LTEXT           "original game on modern 3D cards like GeForceFX...",
+                    IDC_STATIC,7,94,165,8
+    LTEXT           "To know more about me and my stuff here:",IDC_STATIC,7,
+                    113,136,8
+    LTEXT           "Website : http://and.intercon.ru",IDC_STATIC,8,122,101,
+                    8
+    LTEXT           "Email : and@intercon.ru",IDC_STATIC,17,130,76,8
+    ICON            IDI_ICON1,IDC_STATIC,104,133,20,20,0,WS_EX_TRANSPARENT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 175
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 205
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR  DISCARDABLE     "cursor1.cur"
+IDC_CURSOR2             CURSOR  DISCARDABLE     "cursor2.cur"
+IDC_CURSOR3             CURSOR  DISCARDABLE     "cursor3.cur"
+IDC_CURSOR4             CURSOR  DISCARDABLE     "cursor4.cur"
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "icon2.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
